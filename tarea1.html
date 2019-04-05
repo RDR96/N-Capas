@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formula 1</title>
+
+    <style media="screen">
+      * {
+        margin: 0;
+        padding 0;
+      }
+
+      nav {
+        height: 50px;
+        border: 1px solid black;
+        background: black;
+        position: fixed;
+        width: 100%;
+        background: rgba(255,216,18,1);
+        background: -moz-linear-gradient(left, rgba(255,216,18,1) 0%, rgba(255,216,18,1) 6%, rgba(248,80,50,1) 41%, rgba(248,84,48,1) 43%, rgba(255,153,0,1) 82%, rgba(231,56,39,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,216,18,1)), color-stop(6%, rgba(255,216,18,1)), color-stop(41%, rgba(248,80,50,1)), color-stop(43%, rgba(248,84,48,1)), color-stop(82%, rgba(255,153,0,1)), color-stop(100%, rgba(231,56,39,1)));
+        background: -webkit-linear-gradient(left, rgba(255,216,18,1) 0%, rgba(255,216,18,1) 6%, rgba(248,80,50,1) 41%, rgba(248,84,48,1) 43%, rgba(255,153,0,1) 82%, rgba(231,56,39,1) 100%);
+        background: -o-linear-gradient(left, rgba(255,216,18,1) 0%, rgba(255,216,18,1) 6%, rgba(248,80,50,1) 41%, rgba(248,84,48,1) 43%, rgba(255,153,0,1) 82%, rgba(231,56,39,1) 100%);
+        background: -ms-linear-gradient(left, rgba(255,216,18,1) 0%, rgba(255,216,18,1) 6%, rgba(248,80,50,1) 41%, rgba(248,84,48,1) 43%, rgba(255,153,0,1) 82%, rgba(231,56,39,1) 100%);
+        background: linear-gradient(to right, rgba(255,216,18,1) 0%, rgba(255,216,18,1) 6%, rgba(248,80,50,1) 41%, rgba(248,84,48,1) 43%, rgba(255,153,0,1) 82%, rgba(231,56,39,1) 100%);
+      }
+
+      .header-section {
+        height: 400px;
+        border: 1px solid black;
+      }
+
+      section {
+        height: 500px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      #main-section section{
+        display: flex;
+        background: white;
+        border: 1px solid;
+        border-radius: 8px;
+        margin-bottom: 8px;
+      }
+
+      #main-section{
+        background: white;
+        padding-top: 8px;
+      }
+
+      #main-section section div{
+        flex: 1
+      }
+
+      .header-section {
+        display: flex;
+      }
+
+      .header-section div{
+        flex: 1;
+      }
+
+      .center-vertical-horizontal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+      }
+
+      #main-section img{
+        width: 600px;
+        height: 270px;
+      }
+
+      #reglas-titulo{
+        font-size: 22px;
+
+      }
+
+      p{
+        font-family: formulaFont;
+        text-align: justify
+      }
+
+      @font-face {
+          font-family: 'formulaFont'; /*a name to be used later*/
+          src: url('Formula1.ttf'); /*URL to font*/
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <nav class="center-vertical-horizontal">
+      <img src="images/formula1.jpg" alt="" style="height: 100%;">
+    </nav>
+    <div class="header-section">
+      <div class="center-vertical-horizontal">
+        <img src="images/image1.jpg" alt="" style="height: 100%;">
+      </div>
+      <div class="center-vertical-horizontal">
+        <p id="reglas-titulo">Reglas de la formula 1</p>
+
+      </div>
+
+    </div>
+  <div id="main-section" class="" style="background-color: #e1e3e2;">
+
+
+      <section>
+          <div class="center-vertical-horizontal">
+            <img src="images/motor.jpg" alt="">
+          </div>
+          <div class="center-vertical-horizontal" style="padding: 20px;">
+            <h2>Motor:</h2>
+            <p>Los motores de Fórmula 1 deben ser sobrealimentados mediante un turbocompresor, de cuatro tiempos, de combustión interna a gasolina y con motor alternativo de pistones circulares con un máximo de dos válvulas de admisión y dos de escape por cilindro. Desde 2014, los motores deben ser V6 (6 cilindros en V a 90º) con una cilindrada máxima de 1600 cc. Además, se acompañan de un sistema híbrido.</p>
+          </div>
+      </section>
+      <section>
+
+        <div class="center-vertical-horizontal" style="padding: 20px;">
+          <h2>Chasis:</h2>
+          <p>
+    La anchura total del monoplaza, excluyendo los neumáticos, no puede ser mayor a 1800 mm (2005 mm a partir de 2017). La altura total no puede exceder los 950 mm y la longitud máxima no superar los 5000 nbsp;mm (A partir de 2017 los coches no tendrán límite de longitud). Las demás normas establecen límites indirectos sobre casi todas las dimensiones, por lo que casi todos los aspectos del coche llevan regulaciones de talla. En consecuencia, los distintos coches tienden a estar muy cerca del mismo tamaño.</p>
+        </div>
+        <div class="center-vertical-horizontal">
+          <img src="images/Chasis.jpg" alt="">
+        </div>
+      </section>
+
+      <section>
+        <div class="center-vertical-horizontal">
+          <img src="images/llanta.jpg" alt="">
+        </div>
+
+
+
+        <div class="center-vertical-horizontal" style="padding: 20px;">
+          <h2>Neumáticos:</h2>
+          <p>
+          Según el reglamento actual, los neumáticos no pueden tener un diámetro mayor 660 mm para las gomas de asfalto seco y 670 mm para las de asfalto mojado. Los neumáticos delanteros no deben ser más anchos de 245 mm y los traseros no deben superar los 325 mm.</p>
+        </div>
+      </section>
+
+
+  </div>
+
+  </body>
+</html>
